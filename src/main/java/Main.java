@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 
         List<Callable<Integer>> tasks = new ArrayList<>();
+        tasks.add(getThread(2200, 4));
         tasks.add(getThread(2000, 5));
         tasks.add(getThread(1500, 6));
         tasks.add(getThread(1000, 7));
